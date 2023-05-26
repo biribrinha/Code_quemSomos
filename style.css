@@ -204,16 +204,16 @@ body {
 
 .card_menor {
     width: 461px;
-    height: 350px;  
+    height: 350px;
     background-color: var(--azul);
     color: var(--branco);
     border-radius: 10px;
     padding: 25px;
 }
 
-.card_maior{
+.card_maior {
     margin-top: 30px;
-    height: 350px;  
+    height: 350px;
     width: 100%;
     background-color: var(--azul);
     color: var(--branco);
@@ -221,14 +221,15 @@ body {
     padding: 25px;
 }
 
-h4{
+h4 {
     font-family: var(--vw);
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
 }
 
-.card_menor p, .card_maior p{
+.card_menor p,
+.card_maior p {
     font-family: var(--verdana);
     font-size: 15px;
     line-height: 32px;
@@ -237,7 +238,7 @@ h4{
 
 /*FOOTER*/
 
-footer{
+footer {
     margin-top: 20px;
     background-color: var(--azul);
 }
@@ -249,7 +250,7 @@ footer{
     flex-direction: column;
 }
 
-.container_footer1{
+.container_footer1 {
     margin-top: 40px;
     margin-bottom: 40px;
     display: flex;
@@ -257,22 +258,56 @@ footer{
     align-items: center;
 }
 
-.logo_footer{
+.logo_footer {
     width: 147px;
     height: 42px;
 }
 
-.redes_sociais img{
+.redes_sociais img {
     width: 30px;
     margin-right: 20px;
 }
 
-.linha{
+.linha {
     border: 1px solid var(--verde);
 }
 
-.container_footer2{
+.container_footer2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu_footer span {
+    font-family: var(--verdana);
+    color: var(--verde);
+}
+
+.menu_footer li {
+    list-style: none;
+    font-family: var(--verdana);
+    color: var(--branco);
+}
+
+.news {
+    width: 411px;
+    height: 196px;    
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.news span{
+    font-family: var(--verdana);
+    color: var(--verde);
+}
+
+#email{
+    width: 334.83px;
+height: 34px;
+}
+
+.news p{
+    color: var(--branco);
+    font-family: var(--verdana);
+
 }
