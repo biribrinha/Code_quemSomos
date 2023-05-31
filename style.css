@@ -77,6 +77,7 @@ header {
 
 .menu li {
     list-style: none;
+    padding: 0 10px;
 
 }
 
@@ -86,9 +87,54 @@ header {
     font-family: var(--vw);
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 28px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
 }
+
+/*ANIMACAO LINHA*/
+
+.menu a:hover {
+    text-decoration: none;
+}
+
+.menu a:before,
+.menu a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background: #40567C;
+}
+
+.menu a:before {
+    left: 0;
+
+}
+
+.menu a:after {
+    right: 0;
+    background: var(--verde);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu a:hover:before {
+    background: var(--azul);
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+/*fim ANIMACAO LINHA*/
 
 .botoes_header {
     display: flex;
@@ -101,36 +147,44 @@ header {
 .botoes_header .login {
     text-decoration: none;
     color: var(--azul);
-    border: 2px solid #001E50;
+    border: 2px solid var(--azul);
     border-radius: 8px;
-    font-size: 21px;
+    font-size: 18px;
     width: 126px;
     height: 40px;
-    padding: 5px;
+    padding: 8px;
     text-align: center;
 
+}
 
+.botoes_header .login:hover {
+    transition: 0.5s;
+    background-color: var(--azul);
+    color: var(--branco);
 
 }
 
 .botoes_header .cadastro {
     text-decoration: none;
     color: var(--branco);
-    font-size: 21px;
-
+    font-size: 18px;
+    border: 2px solid var(--b);
     width: 126px;
     height: 40px;
-    padding: 5px;
+    padding: 8px;
     text-align: center;
+    border: 2px solid var(--azul);
     background-color: var(--azul);
     border-radius: 8px;
     margin-left: 30px;
-
-
-
-    /*geral*/
-
 }
+
+.botoes_header .cadastro:hover {
+    transition: 0.5s;
+    background-color: var(--branco);
+    color: var(--azul);
+}
+    /*geral*/
 
 body {
     background-color: var(--cinza);
