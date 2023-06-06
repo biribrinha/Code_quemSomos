@@ -34,6 +34,18 @@
 
 }
 
+.posicionamento {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*MENU SANDUICHE*/
+
+
+
+/*FIM MENU SANDUICHE*/
 /* HEADER*/
 header {
     width: 100%;
@@ -52,8 +64,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 270px;
-    margin-right: 270px;
 }
 
 .menu {
@@ -63,7 +73,8 @@ header {
 
 .menu img {
     margin-right: 20px;
-    width: 147px;
+    width: 50%;
+    max-width: 147px;
     height: 42px;
 
 }
@@ -184,7 +195,8 @@ header {
     background-color: var(--branco);
     color: var(--azul);
 }
-    /*geral*/
+
+/*geral*/
 
 body {
     background-color: var(--cinza);
@@ -193,10 +205,10 @@ body {
 /*SESSAO 1*/
 
 .posicionamento_main {
-    margin-left: 270px;
-    margin-right: 270px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
 .posicionamento_main h1 {
@@ -214,7 +226,7 @@ body {
 .container_1 h2 {
     color: var(--azul);
     font-family: var(--vw);
-    font-size: 45px;
+    font-size: 2.5em;
     font-style: normal;
     font-weight: 400;
     margin-bottom: 20px;
@@ -222,7 +234,7 @@ body {
 
 .container_1 p {
     font-family: var(--verdana);
-    font-size: 20px;
+    font-size: 1.2em;
     line-height: 32px;
     color: var(--azul);
     text-align: justify;
@@ -238,6 +250,9 @@ body {
 /*SESSAO 2*/
 .container_2 {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container_2 h3 {
@@ -247,17 +262,20 @@ body {
     font-style: normal;
     font-weight: 400;
     margin-bottom: 20px;
+    text-align: start;
 }
 
 /*CARDS*/
 
+
 .cards1 {
     display: flex;
     justify-content: space-between;
+
 }
 
 .card_menor {
-    width: 461px;
+    width: 410px;
     height: 350px;
     background-color: var(--azul);
     color: var(--branco);
@@ -298,8 +316,6 @@ footer {
 }
 
 .posicionamento_footer {
-    margin-left: 270px;
-    margin-right: 270px;
     display: flex;
     flex-direction: column;
 }
@@ -333,7 +349,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.menu_footer{
+.menu_footer {
     height: 100%;
 }
 
@@ -346,7 +362,7 @@ footer {
     line-height: 28px;
 }
 
-.menu_footer ul{
+.menu_footer ul {
     margin-top: 20px;
 }
 
@@ -428,4 +444,89 @@ footer {
     padding: 20px;
 
 
+}
+
+@media screen and (max-width: 954px) {
+
+
+    /*MENU SANDUICHE*/
+
+
+
+    .burger {
+        cursor: pointer;
+        display: initial;
+        width: 55px;
+    }
+
+    .burger div {
+        background-color: var(--azul);
+        border-radius: 5px;
+        height: 8px;
+        width: 50px;
+        transition-duration: .25s;
+        transition-timing-function: cubic-bezier(.6, .13, .32, 1.46);
+    }
+
+    .burger .one,
+    .burger .two {
+        margin-bottom: 8px;
+    }
+
+    .main-nav-list {
+        background-color: rgba(62, 87, 103, .9);
+        position: fixed;
+        width: 93%;
+        transition-property: transform;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition-duration: .25s;
+        transition-timing-function: cubic-bezier(.6, .13, .32, 1.46);
+    }
+
+    .main-nav-list a {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+        transition-property: opacity;
+        opacity: 0;
+        transition-duration: .15s;
+    }
+
+
+    #input__menu-toggle:checked~.masthead .burger .one {
+        box-shadow: 1px .4px 10px rgba(0, 0, 0, .25);
+        transform-origin: left;
+        transform: translate(15%, -5px) rotate(45deg);
+    }
+
+    #input__menu-toggle:checked~.masthead .burger .two {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #input__menu-toggle:checked~.masthead .burger .three {
+        box-shadow: 1px .4px 10px rgba(0, 0, 0, .25);
+        transform-origin: left;
+        transform: translate(14%, 2px) rotate(-45deg);
+    }
+
+    #input__menu-toggle:checked~.main-nav-list {
+        /*      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.14); */
+        transform: scale(1, 1);
+    }
+
+
+    #input__menu-toggle:checked~.main-nav-list a {
+        transition-property: opacity;
+        opacity: 1;
+        transition-delay: .2s;
+        transition-duration: .1s;
+    }
+
+    /*FIM MENU SANDUICHE*/
+
+    .menu img {
+        width: 100%;
+
+    }
 }
