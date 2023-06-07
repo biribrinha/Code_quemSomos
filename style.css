@@ -653,7 +653,10 @@ footer {
 
     header {
         height: auto;
+        margin: 0 auto;
     }
+
+
 
     .menu {
         margin-top: 30px;
@@ -665,6 +668,7 @@ footer {
 
     .main-nav-list ul {
         flex-direction: column;
+            width: 100%;
     }
 
     .main-nav-list li {
@@ -708,15 +712,14 @@ footer {
 
     .botoes_header_2 .cadastro {
 
-        color: var(--branco);
+        color: var(--azul);
         font-size: 20px;
         border: 2px solid var(--branco);
         width: 126px;
         height: 40px;
         padding: 5px;
         text-align: center;
-        border: 2px solid var(--azul);
-        background-color: var(--azul);
+        background-color: var(--branco);
         border-radius: 8px;
     }
 
