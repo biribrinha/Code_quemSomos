@@ -427,8 +427,7 @@ footer {
 }
 
 .email_footer input[type="submit"] {
-    background: url(./img/submit.svg) no-repeat;
-    background-position: center;
+    text-align: center;
     width: 60.87px;
     height: 34px;
     background-color: var(--verde);
@@ -437,6 +436,9 @@ footer {
     display: flex;
     margin-left: 10px;
     cursor: pointer;
+    color: var(--azul);
+    font-weight: 600;
+    padding: 10px;
 
 }
 
@@ -608,7 +610,7 @@ footer {
     }
 
 
-    .container_1 h2{
+    .container_1 h2 {
         text-align: center;
     }
 
@@ -635,7 +637,7 @@ footer {
         margin-bottom: 30px;
     }
 
-    
+
 
 }
 
@@ -652,11 +654,12 @@ footer {
 
     }
 
+
     .main-nav-list ul {
         flex-direction: column;
     }
 
-    .main-nav-list li{
+    .main-nav-list li {
         margin-top: 10px;
     }
 
@@ -673,7 +676,7 @@ footer {
         display: none;
     }
 
-    .botoes_header_2{
+    .botoes_header_2 {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -691,12 +694,12 @@ footer {
         padding: 5px;
         text-align: center;
         margin-bottom: 20px;
-    
+
     }
-    
-    
+
+
     .botoes_header_2 .cadastro {
-        
+
         color: var(--branco);
         font-size: 20px;
         border: 2px solid var(--branco);
@@ -708,7 +711,7 @@ footer {
         background-color: var(--azul);
         border-radius: 8px;
     }
-    
+
 
     .main-nav-list {
         top: 100px;
@@ -729,9 +732,71 @@ footer {
 
     }
 
+    .container_footer1 {
+
+        margin-bottom: 0;
+    }
+
+    .redes_sociais{
+        margin-bottom: 20px;
+    }
+
+    .redes_sociais img {
+        width: 50px;
+        margin-right: 25px;
+    }
+
+    .container_footer2 {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
 
     .news {
-        width: 80%;
+        width: 100%;
         height: auto;
+        margin-top: 1px;
+        margin-bottom: 30px;
+    }
+
+    .email_footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #email {
+        margin-bottom: 20px;
+    }
+
+
+    .email_footer input[type="submit"] {
+        width: 120px;
+        height: 44px;
+        margin: 0 auto;
+        font-size: 20px;
+        display: block;
+        align-items: center;
+
+    }
+
+    .linha {
+        display: none;
+    }
+
+
+    .menu_footer{
+        width: 80%;
+        text-align: center;
+    }
+
+    .menu_footer span, .menu_footer li{
+        font-size: 17px;
+
+    }
+
+
+
+    .posicionamento_footer {
+        align-items: center;
+        margin: 0 auto;
     }
 }
