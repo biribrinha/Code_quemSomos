@@ -581,6 +581,7 @@ footer {
     }
 
 
+
     .container_2 h3 {
         text-align: center;
     }
@@ -606,6 +607,11 @@ footer {
         padding: 25px;
     }
 
+
+    .container_1 h2{
+        text-align: center;
+    }
+
 }
 
 
@@ -628,6 +634,8 @@ footer {
     .menu_footer ul {
         margin-bottom: 30px;
     }
+
+    
 
 }
 
